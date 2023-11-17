@@ -1,0 +1,15 @@
+[
+	{
+		"name": "Sarah",
+		"age": 28,
+		"gender": "female",
+		"friends": ["Scarlet", "Jack", "Noah"]
+	},
+	{
+		"name": "Jack",
+		"age": 30,
+		"profession": "dentist",
+		"gender": null,
+		"friends": ["Sarah", "Christie", "Susan", "Boris"]
+	}
+]
