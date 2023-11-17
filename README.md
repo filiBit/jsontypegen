@@ -1,17 +1,17 @@
-# jsontypegen
+# @fibiorg/jsontypegen
 
-`jsontypegen` generates a Typescript type from a provided JSON input.
+`@fibiorg/jsontypegen` generates a Typescript type from a provided JSON input.
 
 Check the [Demo](https://filibit.dev/jsontypegen).
 
 ## Install
 
-`npm install jsontypegen`
+`npm install @fibiorg/jsontypegen`
 
 ## Usage
 
 ```js
-import { jsonToTypescript } from "jsontypegen";
+import { jsonToTypescript } from "@fibiorg/jsontypegen";
 
 console.log(
   jsonToTypescript([

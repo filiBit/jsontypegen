@@ -1,5 +1,5 @@
 {
-  "name": "jsontypegen",
+  "name": "@fibiorg/jsontypegen",
   "private": false,
   "version": "1.0.0",
   "description": "Json type generator for Typescript",
