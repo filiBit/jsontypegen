@@ -34,8 +34,5 @@
     "devDependencies": {
         "@types/node": "20.9.0",
         "typescript": "5.2.2"
-    },
-    "dependencies": {
-        "jsontypegen": "file:jsontypegen-1.0.0.tgz"
     }
 }
