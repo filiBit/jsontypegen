@@ -1,41 +1,41 @@
 {
-  "name": "@fibiorg/jsontypegen",
-  "private": false,
-  "version": "1.0.0",
-  "description": "Json type generator for Typescript",
-  "keywords": [
-    "json",
-    "type generator",
-    "typescript"
-  ],
-  "main": "./dist/index.js",
-  "license": "MIT",
-  "author": {
-    "name": "Filip Biterski",
-    "email": "filip.biterski@gmail.com",
-    "url": "http://filibit.dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/filiBit/jsontypegen.git"
-  },
-  "files": [
-    "./dist/**/*"
-  ],
-  "exports": {
-    "import": "./dist/index.js",
-    "require": "./dist/index.js",
-    "default": "./dist/index.js"
-  },
-  "scripts": {
-    "test": "rm -r -f test-temp; npx tsc -p tsconfig.test.json; node ./test-temp/test/index.js; rm -r test-temp",
-    "build": "rm -r -f dist; npx tsc -p tsconfig.build.json"
-  },
-  "devDependencies": {
-    "@types/node": "20.9.0",
-    "typescript": "5.2.2"
-  },
-  "dependencies": {
-    "jsontypegen": "file:jsontypegen-1.0.0.tgz"
-  }
+    "name": "@fibiorg/jsontypegen",
+    "private": false,
+    "version": "1.0.0",
+    "description": "Json type generator for Typescript",
+    "keywords": [
+        "json",
+        "type generator",
+        "typescript"
+    ],
+    "main": "./dist/index.js",
+    "license": "MIT",
+    "author": {
+        "name": "Filip Biterski",
+        "email": "filip.biterski@gmail.com",
+        "url": "http://filibit.dev"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/filiBit/jsontypegen.git"
+    },
+    "files": [
+        "./dist/**/*"
+    ],
+    "exports": {
+        "import": "./dist/index.js",
+        "require": "./dist/index.js",
+        "default": "./dist/index.js"
+    },
+    "scripts": {
+        "test": "rm -r -f test-temp; npx tsc -p tsconfig.test.json; node ./test-temp/test/index.js; rm -r test-temp",
+        "build": "rm -r -f dist; npx tsc -p tsconfig.build.json"
+    },
+    "devDependencies": {
+        "@types/node": "20.9.0",
+        "typescript": "5.2.2"
+    },
+    "dependencies": {
+        "jsontypegen": "file:jsontypegen-1.0.0.tgz"
+    }
 }

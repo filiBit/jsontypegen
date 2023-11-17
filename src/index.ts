@@ -2,8 +2,8 @@ import { makeAst, type JsonDeserialized } from "./makeAst";
 import { astToTypescript } from "./astToTypescript";
 
 export function jsonToTypescript(json: string | JsonDeserialized): string {
-	const validJson: JsonDeserialized =
-		typeof json === "string" ? JSON.parse(json) : json;
+    const validJson: JsonDeserialized =
+        typeof json === "string" ? JSON.parse(json) : json;
 
-	return astToTypescript([makeAst(validJson)]);
+    return astToTypescript([makeAst(validJson)]);
 }

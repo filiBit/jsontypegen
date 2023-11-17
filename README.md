@@ -14,11 +14,11 @@ Check the [Demo](https://filibit.dev/jsontypegen).
 import { jsonToTypescript } from "@fibiorg/jsontypegen";
 
 console.log(
-  jsonToTypescript([
-    { name: "Scarlet", age: 26, education: "university", friends: 3 },
-    { name: "John", age: 30, friends: ["Anna", "Jackie"] },
-  ])
-  // Array<{"name":string;"age":number;"education"?:string;"friends":number|Array<string>;}>
+    jsonToTypescript([
+        { name: "Scarlet", age: 26, education: "university", friends: 3 },
+        { name: "John", age: 30, friends: ["Anna", "Jackie"] },
+    ])
+    // Array<{"name":string;"age":number;"education"?:string;"friends":number|Array<string>;}>
 );
 ```
 
@@ -32,14 +32,14 @@ console.log(
 import { format } from "prettier";
 
 console.log(
-  format(
-    `Array<{"name":string;"age":number;"education"?:string;"friends":number|Array<string>;}>`,
-    {
-      parser: "typescript",
-      tabWidth: 4,
-      printWidth: 80,
-    }
-  )
+    format(
+        `Array<{"name":string;"age":number;"education"?:string;"friends":number|Array<string>;}>`,
+        {
+            parser: "typescript",
+            tabWidth: 4,
+            printWidth: 80,
+        }
+    )
 );
 ```
 
@@ -53,12 +53,12 @@ import typescriptParser from "prettier/plugins/typescript";
 import estreeParser from "prettier/plugins/estree";
 
 format(
-  `Array<{"name":string;"age":number;"education"?:string;"friends":number|Array<string>;}>`,
-  {
-    parser: "typescript",
-    plugins: [typescriptParser, estreeParser],
-    tabWidth: 4,
-    printWidth: 80,
-  }
+    `Array<{"name":string;"age":number;"education"?:string;"friends":number|Array<string>;}>`,
+    {
+        parser: "typescript",
+        plugins: [typescriptParser, estreeParser],
+        tabWidth: 4,
+        printWidth: 80,
+    }
 );
 ```

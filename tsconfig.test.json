@@ -1,13 +1,13 @@
 {
-	"files": ["./test/index.ts"],
-	"compilerOptions": {
-		"lib": ["esnext"],
-		"strict": true,
-		"target": "esnext",
-		"module": "nodenext",
-		"moduleResolution": "NodeNext",
-		"esModuleInterop": true,
-		"resolveJsonModule": true,
-		"outDir": "./test-temp"
-	}
+    "files": ["./test/index.ts"],
+    "compilerOptions": {
+        "lib": ["esnext"],
+        "strict": true,
+        "target": "esnext",
+        "module": "nodenext",
+        "moduleResolution": "NodeNext",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "outDir": "./test-temp"
+    }
 }
