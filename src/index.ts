@@ -5,5 +5,5 @@ export function jsonToTypescript(json: string | JsonDeserialized): string {
     const validJson: JsonDeserialized =
         typeof json === "string" ? JSON.parse(json) : json;
 
-    return astToTypescript([makeAst(validJson)]);
+    return "type X = " + astToTypescript([makeAst(validJson)]);
 }
